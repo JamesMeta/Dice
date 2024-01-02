@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div>
+    <head>Dice</head>
+    </div>
+    
+    <body onload="onPageLoad()"></body>
+
+    <body>
+    <div id="canvas">
+        <canvas id="Dice1" width="200" height="300" style="border:1px solid;"></canvas>
+        <canvas id="Dice2" width="200" height="300" style="border:1px solid;"></canvas>
+        <canvas id="Dice3" width="200" height="300" style="border:1px solid;"></canvas>
+        <canvas id="Dice4" width="200" height="300" style="border:1px solid;"></canvas>
+        <canvas id="Dice5" width="200" height="300" style="border:1px solid;"></canvas>
+    </div>
+    </body>
+    <body>
+    <div id="dicesize">
+        <form>
+            <label for="fname">Dice Size</label><br>
+            <input type="text" id="dsize" name="dsize"><br>
+        </form>
+    </div>
+    </body>
+    <div id="diceamount">
+        <form>
+            <label for="fname">Dice Amount</label><br>
+            <input type="text" id="damount" name="damount"><br>
+        </form>
+    </div>
+    </body>
+    <div id="droll">
+        <button onclick="rollDice()">Roll Dice</button>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="css/style.css"></script>
+
+
+    
+</html>
