@@ -58,7 +58,7 @@ async function rollDice(){
     console.log(amount);
 
     for (let i = 1; i <= amount; i++) {
-        for (let j = 1; j <= 20; j++) {
+        for (let j = 1; j <= 20; j++) { 
             await sleep(40);
             const randomDice = getRandomNumber(1, size);
             const imageLocation = imageMap.get(randomDice);
