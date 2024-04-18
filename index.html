@@ -1,43 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <div>
-    <head>Dice</head>
+<head>
+    <meta charset="UTF-8">
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="title">Dice Roller</h1>
+    <h2 class="subtitle">Definitely NOT weighted!</h2>
+    <div id="canvas" class="canvas-container"></div>
+    <div id="controls" class="controls-container">
+        <button class="control-btn" onclick="addNewDie()">Add New Die</button>
+        <button class="control-btn" onclick="rollDice()">Roll Dice</button>
+        <button class="control-btn" onclick="reset()">Reset</button>
     </div>
-    
-    <body onload="onPageLoad()"></body>
+</div>
 
-    <body>
-    <div id="canvas">
-        <canvas id="Dice1" width="200" height="300" style="border:1px solid;"></canvas>
-        <canvas id="Dice2" width="200" height="300" style="border:1px solid;"></canvas>
-        <canvas id="Dice3" width="200" height="300" style="border:1px solid;"></canvas>
-        <canvas id="Dice4" width="200" height="300" style="border:1px solid;"></canvas>
-        <canvas id="Dice5" width="200" height="300" style="border:1px solid;"></canvas>
-    </div>
-    </body>
-    <body>
-    <div id="dicesize">
-        <form>
-            <label for="fname">Dice Size</label><br>
-            <input type="text" id="dsize" name="dsize"><br>
-        </form>
-    </div>
-    </body>
-    <div id="diceamount">
-        <form>
-            <label for="fname">Dice Amount</label><br>
-            <input type="text" id="damount" name="damount"><br>
-        </form>
-    </div>
-    </body>
-    <div id="droll">
-        <button onclick="rollDice()">Roll Dice</button>
-    </div>
-
-
-    <script src="js/main.js"></script>
-    <script src="css/style.css"></script>
-
-
-    
+<script src="js/main.js"></script>
+</body>
 </html>
